@@ -14,6 +14,7 @@ namespace AutomationTask_MittoCH.PageObject
         }
 
         [FindsBy(How = How.CssSelector, Using = "[name = 'q']")]
+        [CacheLookup]
         public IWebElement SearchBar { get; set; }
 
         public void goToPage(string url)

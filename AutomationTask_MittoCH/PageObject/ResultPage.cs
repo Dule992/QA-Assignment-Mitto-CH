@@ -14,6 +14,7 @@ namespace AutomationTask_MittoCH.PageObject
         }
 
         [FindsBy(How = How.CssSelector, Using = "#rso > div:nth-child(1) > div > div > div.r > a")]
+        [CacheLookup]
         public IWebElement FirstSite { get; set; }
 
         public void clickOnFirstSite()
